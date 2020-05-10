@@ -1,0 +1,251 @@
+.field-full-width{
+    width:70%;
+    color:black;
+    text-align: center;
+    font-size: 13px;
+}
+.sign{
+   
+    font-size: 12px;
+    width: 50%;
+    margin-left: 25%;
+   text-align: center;
+   color:black;
+   margin-top:5%;
+   justify-content: center;
+   font-style: vegan style;
+   font-family: alata;
+}
+.inventory-body {
+    margin: 0;
+    padding: 0;
+     background-image: url("/assets/images/login1.jpg");
+     background-size: cover;
+     height: 100vh;
+     background-position: center;
+     font-family: sans-serif;
+     }
+    .coffee {
+        display: flex;
+        flex-direction: row;
+        border-style: groove;
+        border: 1px solid #6b6b6b;
+        box-shadow: 2px 2px 2px 2px #666147;
+      }
+      
+      .coffeelove {
+        width: 25%;
+        padding-top: 1%;
+      }
+      
+      .coffeelove1 {
+        width: 30%;
+        padding-right: 7px;
+        text-align: center;
+      }
+      
+      .logo {
+       width: 30%;
+       height: 100px;
+        padding-left: 5%;
+      }
+      .headding{
+        font-size: 300%;
+        margin-top: 10%;
+        text-align: center;
+         font-family:'Patua One',cursive;
+      }
+      .mat-typography h3{
+        font-family:'Patua One',cursive;
+        font-weight: bold;
+        font-size: 20px;
+        
+      }
+    .topnav{
+        overflow: hidden;
+        margin-left: 80%;
+        display: inline;
+     } 
+    .topnav a {
+      float: right;
+      color:honeydew;
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-size: 15px;
+     } 
+    .topnav a:hover {
+      color:chartreuse;
+    }
+
+    @media only screen and (min-width:320px) and (max-width:767px) {
+
+      .coffee {
+         width:100%;
+         display: flex;
+         flex-direction: row;
+         border-style: groove;
+         border: 1px solid #6b6b6b;
+         box-shadow: 2px 2px 2px 2px #666147;
+       }
+      
+       .coffeelove {
+         width: 50%;
+         /* padding-top: 1%; */
+       }
+     
+       .coffeelove1 {
+         width: 100%;
+         /* padding-left:100px; */
+         padding-right: 15px;
+         text-align: center;
+       }
+     
+       .logo {
+        width: 50%;
+        height: 100px;
+         padding-left: 5%;
+       }
+       .field-full-width{
+        width:70%;
+        color:black;
+        text-align: center;
+        font-size: 13px;
+    }
+    .sign{
+        font-size: 12px;
+       text-align: center;
+       color:black;
+       margin-top:5%;
+       justify-content: center;
+       font-style: vegan style;
+       font-family: alata;
+       margin-left:10%;
+         width: 70%;
+    }
+    .inventory-body {
+        margin: 0;
+        padding: 0;
+         background-image: url("/assets/images/login1.jpg");
+         background-size: cover;
+         height: 100vh;
+         background-position: center;
+         font-family: sans-serif;
+         
+         }
+         .headding{
+          font-size: 28px;
+          margin-top: 20%;
+          text-align: center;
+           font-family:'Patua One',cursive;
+        }
+        .mat-typography h3{
+          font-family:'Patua One',cursive;
+          font-weight: bold;
+          font-size: 20px;
+          
+        }
+      /* .topnav{
+          overflow: hidden;
+          margin-left: 80%;
+          display: inline;
+       }  */
+      /* .topnav a {
+        float: right;
+        color:honeydew;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 15px;
+       } 
+      .topnav a:hover {
+        color:chartreuse;
+      } */
+      }
+      @media only screen and (min-width:768px) and (max-width:1023px) {
+      
+        .coffee {
+          width:100%;
+          display: flex;
+          flex-direction: row;
+          border-style: groove;
+          border: 1px solid #6b6b6b;
+          box-shadow: 2px 2px 2px 2px #666147;
+        }
+       
+        .coffeelove {
+          width: 50%;
+          /* padding-top: 1%; */
+        }
+      
+        .coffeelove1 {
+          width: 100%;
+          /* padding-left:100px; */
+          padding-right: 15px;
+          text-align: center;
+        }
+      
+        .logo {
+         width: 50%;
+         height: 100px;
+          padding-left: 5%;
+        }
+        .field-full-width{
+         width:70%;
+         color:black;
+         text-align: center;
+         font-size: 13px;
+     }
+     .sign{
+         font-size: 12px;
+        text-align: center;
+        color:black;
+        margin-top:5%;
+        margin-left: 500px;
+        margin-right: 500px;
+        justify-content: center;
+        font-style: vegan style;
+        font-family: alata;
+        width:70%;
+        margin-left: 20%;
+
+     }
+     .inventory-body {
+         margin: 0;
+         padding: 0;
+          background-image: url("/assets/images/login1.jpg");
+          background-size: cover;
+          height: 100vh;
+          background-position: center;
+          font-family: sans-serif;
+          }
+          .headding{
+           font-size: 40px;
+           margin-top: 10%;
+           text-align: center;
+            font-family:'Patua One',cursive;
+         }
+         .mat-typography h3{
+           font-family:'Patua One',cursive;
+           font-weight: bold;
+           font-size: 20px;
+           
+         }
+       /* .topnav{
+           overflow: hidden;
+           margin-left: 80%;
+           display: inline;
+        } 
+       .topnav a {
+         float: right;
+         color:honeydew;
+         text-align: center;
+         padding: 10px 10px;
+         text-decoration: none;
+         font-size: 15px;
+        } 
+       .topnav a:hover {
+         color:chartreuse;
+       } */
+      
+      }

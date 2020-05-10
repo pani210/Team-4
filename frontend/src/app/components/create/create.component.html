@@ -1,0 +1,95 @@
+
+<body class="inventory-body">
+    <!-- <div class=topnav>
+      
+        <nav>
+          
+            <ul>
+                <a routerLink="/shopsnearby" routerLinkActive="active">Near By Shops</a>
+                <a routerLink="/Signup" routerLinkActive="active">Signup</a>
+                <a routerLink="/userLogin" routerLinkActive="active">Login</a>
+                <a routerLink="/coffeeShopsData" routerLinkActive="active">Coffee</a>
+                    <a routerLink="/Home" routerLinkActive="active">Home</a>
+                      <div class="bannerdata"></div>
+                </ul>
+          </nav>
+        </div> -->
+<div class=sign>
+    <br>
+    <mat-card>
+        <section class="mat-typography">
+        <h3>Signup</h3>
+    </section>
+    <mat-divider>
+
+    </mat-divider>
+    <br>
+    <div class="form">
+    <form [formGroup]="createForm" class="create-form">
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="firstname" formControlName="Firstname"#Firstname required>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="lastname" formControlName="Lastname"#Lastname required>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="Phonenumber" formControlName="phonenumber"#phonenumber required>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="age" formControlName="Age"#Age required>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="dob" formControlName="DOB"#DOB required>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="gender" formControlName="Gender"#Gender required>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="email" formControlName="Email"#Email ngModel [email]="true" required>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="password" formControlName="Password"#Password pattern="^(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[!@#$%^&*_=+-]).{8,12}" required>
+        </mat-form-field>
+        <span style="color: gray;"><br>Password must contains :<br>
+            <ul>
+              <li>At least 1 Uppercase</li>
+              
+              <li>At least 1 Lowercase</li>
+              <li>At least 1 Number</li>
+              <li>At least 1 Symbol,</li>
+              <li>Min 8 chars and Max 12 chars</li>
+            </ul></span>
+
+        <!-- <mat-form-field class="field-full-width"> -->
+            <!-- <input type='file'  placeholder="profilepic" formControlName="profilePic"#profilePic> -->
+        <!-- </mat-form-field> -->
+        <mat-divider>
+        </mat-divider>
+        <br><br>
+        <div>
+        <button mat-raised-button color="accent" routerLink="/Home">Back</button>&nbsp;
+        <button type="submit"(click)="addDetails(Firstname.value,Lastname.value,phonenumber.value,Age.value,DOB.value,Gender.value,Email.value,Password.value)"
+        [disabled]="createForm.pristine||createForm.invalid"mat-raised-button color="accent">save</button>
+        </div>
+    </form>
+</div>
+    </mat-card>
+</div>
+</body>
+
+<!-- <body background="../../assets/images/logo.jpg"> -->
+
+<!-- <footer class=footer>
+    <img src="../../assets/images/footer-bg.jpg" alt="coffeeimage" class=foot>
+    <div class="data">
+        <h2>copyrights ©2020 Lemon solutions</h2>
+    </div>
+</footer> -->
+    

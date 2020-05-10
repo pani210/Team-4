@@ -1,0 +1,101 @@
+ <!-- <div>
+    <br>
+    <mat-card>
+ <button mat-raised-button color="primary" routerLink="/coffeeShopsData">Signu/button> 
+        <br><br>
+        <mat-divider></mat-divider>
+        <br>
+        <table mat-table [dataSource]="issue">
+            <ng-container matColumnDef="Name">
+                <th mat-header-cell *matHeaderCellDef>Name</th>
+                <td mat-cell *matCellDef="let element">{{element.Name}}</td>
+            </ng-container>
+    
+                        <ng-container matColumnDef="Timings">
+                        <th mat-header-cell *matHeaderCellDef>Timings</th>
+                        <td mat-cell *matCellDef="let element">{{element.Timings}}</td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="Rating">
+                        <th mat-header-cell *matHeaderCellDef>Rating</th>
+                        <td mat-cell *matCellDef="let element">{{element.Rating}}</td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="Actions">
+                            <th mat-header-cell *matHeaderCellDef >Actions</th>
+                        <td mat-cell *matCellDef="let element">
+                            <button mat-button color="primary" (click)="coffeeData(element._id)">Click Here</button>
+                            </td>
+                        </ng-container>
+                        
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row;
+                                    columns:displayedColumns;"></tr>
+                        </table>
+                        
+                    </mat-card>
+                    <div class="Button">
+                        <button mat-raised-button color="accent" routerLink="/Home">Back</button>&nbsp;
+                    </div>
+                    </div>  -->
+                    <body class="inventory-body">
+                        <!-- <div class=topnav>
+                            <nav>
+                                <ul>
+                                    <a routerLink="/shopsnearby" routerLinkActive="active">Near By Shops</a>
+                                    <a routerLink="/Signup" routerLinkActive="active">Signup</a>
+                                    <a routerLink="/userLogin" routerLinkActive="active">Login</a>
+                                    <a routerLink="/coffeeShopsData" routerLinkActive="active">Coffee</a>
+                                        <a routerLink="/Home" routerLinkActive="active">Home</a>
+                                          <div class="bannerdata"></div>
+                                    </ul>
+                              </nav>
+                            </div> -->
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search Coffee shop" style="width:300px;" [(ngModel)]="searchTerm"/>
+                                              </div>
+                       <div class="panii"*ngFor="let data of issue | coffeeDataFilter:searchTerm">
+                           <mat-card>
+                            <img src="/assets/images/coffee1.jpeg" alt="image" width="100%" height="10%">
+                               <mat-card-header>
+                                   <mat-card-title> {{ data.name}}</mat-card-title>
+                               </mat-card-header>
+                               <mat-card-content>
+                                   <p>Timings: {{ data.timing }}</p>
+                                   <p>Ratings: {{ data.rating }}</p>
+                                   <button mat-button color="accent" (click)="coffeeData(data._id)">Click Here</button>
+                               </mat-card-content>
+                           </mat-card>   
+                                
+                                  </div> 
+                                  <div class="but">
+                                  <!-- <button mat-raised-button color="accent" routerLink="/Home">Back</button>&nbsp; -->
+                                </div>
+                                  
+                                </body>
+                                <!-- <h1>About Us:</h1> -->
+<!-- <body background="../../assets/images/logo.jpg"> -->
+<!-- <div class="About">
+    <h3>Coffee is a brewed drink prepared from roasted cofffee beans,the seeds of berries from certain coffee species.<br>once riped,coffee berries are picked,processed and dried.Dried coffee seeds are roasted<br> to varying degrees,depending on the desired flavour.Roasted beans are ground and then brewed <br>with near-boiling water to produce the beverage known as "COFFEE".
+    <br><br>
+The people who love coffee and feel it,that coffee would relive from their stress always love coffee like any other thing.<br>we provide coffee with good taste where people always love it.
+<br>coffee is someones love,someones happiness and someones everything.</h3> -->
+<!-- <img src="../../assets/images/Logo.jpg" alt="coffelogo"> -->
+
+ 
+        <!-- <div class="foot">
+            <footer><h2>copyrights ©2020 Lemon solutions</h2>
+            </footer>
+        </div> -->
+        
+         
+        
+    <!-- </div>     -->
+
+                                    
+                                
+
+
+
+
+

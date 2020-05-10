@@ -1,0 +1,33 @@
+
+<body class="inventory-body">
+    <!-- <div class=topnav>
+        <nav>
+            <ul>
+                <a routerLink="/shopsnearby" routerLinkActive="active">Near By Shops</a>
+                <a routerLink="/Signup" routerLinkActive="active">Signup</a>
+                <a routerLink="/userLogin" routerLinkActive="active">Login</a>
+                <a routerLink="/coffeeShopsData" routerLinkActive="active">Coffee</a>
+                    <a routerLink="/Home" routerLinkActive="active">Home</a>
+                </ul>
+          </nav>
+        </div> -->
+<div class=profile>
+Firstname:{{userData.Firstname}}<br>
+Lastname:{{userData.Lastname}}<br>
+phonenumber:{{userData.phonenumber}}<br>
+DOB:{{userData.DOB}}<br>
+Age:{{userData.Age}}<br>
+Gender:{{userData.Gender}}<br>
+Email:{{userData.Email}}<br>
+<button mat-raised-button color="accent" routerLink="/Home">Back</button>&nbsp;
+<div>
+    <h2>favourite coffee shops...</h2>
+    <div *ngFor='let element of issuebar; let i = index; trackBy: tracByBarId'>
+        <mat-slide-toggle  (change)="favChanged(element._id,userData._id,$event)" 
+        [checked]="checkedfunction(element._id)" 
+        >{{element.name}}</mat-slide-toggle>
+    </div>
+    <h3>Turn on the button to make it favourite</h3>
+</div>
+</div>
+</body>

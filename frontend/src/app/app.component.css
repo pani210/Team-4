@@ -1,0 +1,42 @@
+.menu-spacer {
+  flex: 1 1 auto;
+}
+/* .logo {
+  width: 3%;
+ } */
+ /* .coffeelove1 {
+  width: 30%;
+  padding-right: 70px;
+  text-align: center;
+} */
+
+.coffee {
+  display: flex;
+  flex-direction: row;
+  border-style: groove;
+  border: 1px solid #6b6b6b;
+  box-shadow: 2px 2px 2px 2px #666147;
+}
+
+.coffeelove {
+  width: 25%;
+  padding-top: 1%;
+}
+
+.coffeelove1 {
+  width: 20%;
+  top:50%;
+  /* margin-top:50%; */
+  padding-right: 7px;
+  text-align: center;
+}
+
+.logo {
+ width: 30%;
+ height: 100px;
+  padding-left: 5%;
+}
+.coffelove2{
+  /* top:50px; */
+  margin-top:50%;
+}

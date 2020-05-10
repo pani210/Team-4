@@ -1,0 +1,58 @@
+<header class="coffee">
+  <div class="coffeelove">
+<img src="../../assets/images/Logo.jpg" alt="logo" class="logo">
+</div>
+<div class="coffeelove1">
+<h1 class="headding">C O F F E  L O V E</h1>
+</div>
+
+
+<div class="coffeelove2">
+  <div class="bannerdata"></div>
+  <div>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <!-- <span>Responsive Navigation</span> -->
+        <!-- <img src="../../assets/images/Logo.jpg" alt="logo" class="logo"> -->
+        <!-- <div class="coffeelove1">
+          <h1 class="headding">C O F F E  L O V E</h1>
+        </div> -->
+        <!-- <span style="padding-left:10px">C O F F E  L O V E</span> -->
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md>
+          
+          <a (click)="sidenav.toggle()" href="" mat-list-item style="display: none;">Close</a>
+          <a mat-button [routerLink]="['/Home']" routerLinkActive="active">Home</a>
+          <a mat-button [routerLink]="['/coffeeShopsData']" routerLinkActive="active">Coffee</a>
+          <a mat-button [routerLink]="['/userLogin']" routerLinkActive="active">Login</a>
+          <a mat-button [routerLink]="['/Signup']" routerLinkActive="active">Signup</a>
+          <a mat-button [routerLink]="['/shopsnearby']" routerLinkActive="active">Near By Shops</a>
+  
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+    <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav> 
+        <mat-nav-list>
+          <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+          <a mat-button [routerLink]="['/Home']" routerLinkActive="active">Home</a>
+          <a mat-button [routerLink]="['/coffeeShopsData']" routerLinkActive="active">Coffee</a>
+          <a mat-button [routerLink]="['/userLogin']" routerLinkActive="active">Login</a>
+          <a mat-button [routerLink]="['/Signup']" routerLinkActive="active">Signup</a>
+          <a mat-button [routerLink]="['/shopsnearby']" routerLinkActive="active">Near By Shops</a>
+  
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+
+  </div>
+  </header>
+      <router-outlet>
+    </router-outlet>

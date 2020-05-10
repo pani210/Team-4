@@ -1,0 +1,327 @@
+body{
+  height: auto;
+}
+.panii{
+    margin-top: 50px;
+    flex-direction: row;
+    height:350px;
+    display: inline-block;
+    justify-content:space-between;
+    border: 1px solid;
+    
+    padding: 5px;
+}
+
+.inventory-body {
+    min-width: 100%;
+    background-image: url("../../../assets/images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    /* height: 140%; */
+   
+   overflow: hidden;;
+    }
+    
+.form-group{
+    margin-top:30px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: 5px gray;
+}
+.but{
+    position:absolute;
+    top:550%;
+    margin-left:500px; 
+}
+.coffee {
+    display: flex;
+    flex-direction: row;
+    border-style: groove;
+    border: 1px solid #6b6b6b;
+    box-shadow: 2px 2px 2px 2px #666147;
+  }
+  
+  .coffeelove {
+    width: 25%;
+    padding-top: 1%;
+  }
+  
+  .coffeelove1 {
+    width: 30%;
+    padding-right: 7px;
+    text-align: center;
+  }
+  
+  .logo {
+   width: 30%;
+   height: 100px;
+    padding-left: 5%;
+  }
+  .headding{
+    font-size: 300%;
+    margin-top: 10%;
+    text-align: center;
+     font-family:'Patua One',cursive;
+  }
+/* .topnav{
+    overflow: hidden;
+    margin-left: 80%;
+    display: inline;
+    padding-left: 1050px;
+ } 
+.topnav a {
+  float: right;
+  color:honeydew;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+ } 
+.topnav a:hover {
+  color:chartreuse;
+}  */
+mat-card-title{
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+mat-card-content p{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+.panii:hover{        
+transform: scale(0.9);
+border: 1px solid burlywood;
+  
+}
+.but{
+    position:absolute;
+    /* top:250px; */
+    top:155%;
+    margin-left:40%; 
+    
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+
+  .coffee {
+     width:100%;
+     display: flex;
+     flex-direction: row;
+     border-style: groove;
+     border: 1px solid #6b6b6b;
+     box-shadow: 2px 2px 2px 2px #666147;
+   }
+  
+   .coffeelove {
+     width: 50%;
+     /* padding-top: 1%; */
+   }
+ 
+   .coffeelove1 {
+     width: 100%;
+     /* padding-left:100px; */
+     padding-right: 15px;
+     text-align: center;
+   }
+ 
+   .logo {
+    width: 50%;
+    height: 100px;
+     padding-left: 5%;
+   }
+
+   .panii{
+    margin-top: 50px;
+    flex-direction: row;
+    height:350px;
+    display: inline-block;
+    justify-content:space-between;
+    border: 1px solid;
+    padding: 5px;margin-left: 11%;
+}
+
+/* .inventory-body {
+    min-width: 100%;
+    background-image: url("../../../assets/images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    height: 140%;
+   overflow: hidden;
+    } */
+    
+.form-group{
+    margin-top:30px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: 5px gray;
+}
+.but{
+    position:absolute;
+    /* top:550%; */
+    /* margin-left:500px;  */
+}
+
+
+.headding{
+  font-size: 300%;
+  margin-top: 10%;
+  text-align: center;
+   font-family:'Patua One',cursive;
+}
+/* .topnav{
+  overflow: hidden;
+  margin-left: 80%;
+  display: inline; */
+  /* padding-left: 1050px; */
+/* }  */
+/* .topnav a {
+float: right;
+color:honeydew;
+text-align: center;
+padding: 10px 10px;
+text-decoration: none;
+font-size: 15px;
+}  */
+/* .topnav a:hover {
+color:chartreuse;
+}  */
+mat-card-title{
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+}
+mat-card-content p{
+font-style: italic;
+font-weight: bold;
+font-size: 20px;
+}
+.panii:hover{        
+transform: scale(0.9);
+border: 1px solid burlywood;
+
+}
+.but{
+  position:absolute;
+  /* top:250px; */
+  top:155%;
+  margin-left:40%; 
+  
+}
+
+  }
+  @media only screen and (min-width:768px) and (max-width:1023px) {
+  
+    .coffee {
+      width:100%;
+      display: flex;
+      flex-direction: row;
+      border-style: groove;
+      border: 1px solid #6b6b6b;
+      box-shadow: 2px 2px 2px 2px #666147;
+    }
+   
+    .coffeelove {
+      width: 50%;
+      /* padding-top: 1%; */
+    }
+  
+    .coffeelove1 {
+      width: 100%;
+      /* padding-left:100px; */
+      padding-right: 15px;
+      text-align: center;
+    }
+  
+    .logo {
+     width: 50%;
+     height: 100px;
+      padding-left: 5%;
+    }
+ 
+    .panii{
+     margin-top: 50px;
+     flex-direction: row;
+     height:350px;
+     display: inline-block;
+     justify-content:space-between;
+     border: 1px solid;
+     padding: 5px;margin-left: 11%;
+ }
+ 
+ /* .inventory-body {
+     min-width: 100%;
+     background-image: url("../../../assets/images/header-bg.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     background-size: cover;
+     height: 140%;
+    overflow: hidden;
+     } */
+     
+ .form-group{
+     margin-top:30px;
+     margin-left: 15px;
+     border-radius: 15px;
+     border: 5px gray;
+ }
+ .but{
+     position:absolute;
+     /* top:550%; */
+     /* margin-left:500px;  */
+ }
+ 
+ 
+ .headding{
+   font-size: 300%;
+   margin-top: 10%;
+   text-align: center;
+    font-family:'Patua One',cursive;
+ }
+ /* .topnav{
+   overflow: hidden;
+   margin-left: 80%;
+   display: inline; */
+   /* padding-left: 1050px; */
+ /* }  */
+ /* .topnav a {
+ float: right;
+ color:honeydew;
+ text-align: center;
+ padding: 10px 10px;
+ text-decoration: none;
+ font-size: 15px;
+ } 
+ .topnav a:hover {
+ color:chartreuse;
+ }  */
+ mat-card-title{
+   font-style: italic;
+   font-size: 20px;
+   font-weight: bold;
+ }
+ mat-card-content p{
+ font-style: italic;
+ font-weight: bold;
+ font-size: 20px;
+ }
+ .panii:hover{        
+ transform: scale(0.9);
+ border: 1px solid burlywood;
+ 
+ }
+ .but{
+   position:absolute;
+   /* top:250px; */
+   top:155%;
+   margin-left:40%; 
+   
+ }
+  }

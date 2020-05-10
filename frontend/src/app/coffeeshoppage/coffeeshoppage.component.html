@@ -1,0 +1,79 @@
+
+<div class="back">
+    <!-- <div class=topnav>
+        <nav>
+            <ul>
+                <a routerLink="/shopsnearby" routerLinkActive="active">Near By Shops</a>
+                <a routerLink="/Signup" routerLinkActive="active">Signup</a>
+                <a routerLink="/userLogin" routerLinkActive="active">Login</a>
+                <a routerLink="/coffeeShopsData" routerLinkActive="active">Coffee</a>
+                    <a routerLink="/Home" routerLinkActive="active">Home</a>                    
+                      <div class="bannerdata"></div>
+                </ul>
+          </nav>
+        </div> -->
+<div class="coffeeshopdetails">
+<h1>Coffee Shop Details</h1>
+    <!-- <div class="left"> -->
+        Name:{{issue.name}}<br>
+        Description:{{issue.description}}<br>
+        Latitude:{{issue.latitude}}<br>
+        Longitude:{{issue.longitude}}<br>
+        Rating:{{issue.rating}}<br>
+        <!-- Review:{{issue.review}}<br> -->
+        Timing:{{issue.timing}}<br>
+        SpecialItems:{{issue.specialitems}}<br>
+        Facilities:{{issue.facilities}}<br>
+        contact Number:{{issue.contactnumber}}<br>
+        Email:{{issue.email}}<br>
+     <!-- </div> -->
+</div>
+<div class="but">
+<button mat-raised-button color="accent" routerLink="/coffeeShopsData">Back</button>&nbsp;
+<button mat-raised-button color="primary" (click)="barmap(issue._id)">Map</button>
+</div>
+</div><br>
+
+
+<div class="feet">
+    <div class="left">
+    <button (click)="toggleCollapse()">Click To Review</button>
+    <button (click)="ratedivdsipaly()" class="ratinglayer">RATE US</button>
+                
+                <div *ngIf="!isCollapsed" >
+                    <form class="text">
+                        <input type="text" placeholder="Enter text here" #review/>
+                        <input type="submit" (click)="addreview(issue._id,currentuser.Firstname,review.value)">
+                    </form> 
+                </div>
+                <div *ngIf="!ratediv" class="ratinglayer" style="background-color:brown; width: 100%; padding:1%; margin-top: 2%; margin: 1%; color:black; border-radius: 10px;">
+                    <h2>RATE HERE</h2>
+                    <form>
+                      <mat-slider 
+                            class="example-margin"
+                            [disabled]=false
+                            [invert]="invert"
+                            [max]="max"
+                            [min]="min"
+                            [step]="step"
+                            [thumbLabel]="thumbLabel"
+                            [tickInterval]="getSliderTickInterval()"
+                            [vertical]="vertical" #slider
+                            >
+                        </mat-slider> 
+                        <input type="submit" (click)="rateadd(slider.value,issue._id)" />
+                    </form>
+                  
+                </div>
+                <div class="reviewslayer">
+                    <h1 style="font-family: 'Courgette', cursive;"><b><i>Reviews</i></b></h1>
+                        <div *ngFor="let config of reviewlayout; let i = index">
+                            <p style="font-size: 15px; ">
+                                <b style="border-left: 2px double wheat;"><i>{{reviewlayout[i]}}</i></b>
+                            </p>
+                            
+                        </div>
+                             
+                </div>
+                </div>           
+    </div>

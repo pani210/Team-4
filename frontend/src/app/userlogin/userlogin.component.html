@@ -1,0 +1,62 @@
+
+<body class="inventory-body">
+    <!-- <div class=topnav>
+        <nav>
+            <ul>
+                <a routerLink="/shopsnearby" routerLinkActive="active">Near By Shops</a>
+                <a routerLink="/Signup" routerLinkActive="active">Signup</a>
+                <a routerLink="/userLogin" routerLinkActive="active">Login</a>
+                <a routerLink="/coffeeShopsData" routerLinkActive="active">Coffee</a>
+                    <a routerLink="/Home" routerLinkActive="active">Home</a>            
+                      <div class="bannerdata"></div>
+                </ul>
+          </nav>
+        </div> -->
+        
+<div class="boy">
+    <br>
+    <mat-card>
+        <section class="mat-typography">
+        <h3>Login</h3>
+    </section>
+    <mat-divider>
+
+    </mat-divider>
+    <br>
+    <!-- 
+        <button mat-raised-button color="primary" routerLink="/userLogin">Login</button> -->
+    <form [formGroup]="createForm" class="create-form">
+        <mat-form-field class="field-full-width">
+            <input matInput placeholder="Email" formControlName="Email"#Email ngModel [email]="true" required>
+        </mat-form-field><br><br>
+
+        <mat-form-field class="field-full-width"> 
+            <input type="password" matInput placeholder="password" formControlName="Password"#Password pattern="^(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[!@#$%^&*_=+-]).{8,12}" required>
+        </mat-form-field>
+        <span style="color: gray;"><br>Password must contains :<br>
+            <ul>
+              <li>At least 1 Uppercase</li>
+              
+              <li>At least 1 Lowercase</li>
+              <li>At least 1 Number</li>
+              <li>At least 1 Symbol,</li>
+              <li>Min 8 chars and Max 12 chars</li>
+            </ul></span>
+        <mat-divider>
+
+        </mat-divider>
+        <br><br>
+        <button mat-raised-button color="accent" routerLink="/Home">Back</button>&nbsp;
+        <button  mat-raised-button color="accent" type="submit"(click)="userLogin(Email.value,Password.value)"[disabled]="createForm.pristine||createForm.invalid"mat-raised-button color="primary">Login</button>
+       </form>
+       </mat-card>
+    </div>
+</body>
+<!-- <div class="data">
+       <footer>
+            <h2>copyrights ©2020 Lemon solutions</h2> 
+    </footer>
+</div> -->
+   
+
+   

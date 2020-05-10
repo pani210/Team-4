@@ -1,0 +1,180 @@
+.profile{
+  flex-direction: row;
+    justify-content:space-between;
+    border: 1px solid;
+    padding: 5px;
+    text-align:center;
+    color: white;
+    border-width: 15px;
+    border-style: groove;
+    width: 50%;
+    /* height: 500px; */
+    text-align: center;
+    margin-left: 25%;
+    /* margin-right: 500px; */
+    margin-top: 5%;
+    font-size:15px;
+    font-style: italic;
+}
+.profile img{
+  width: 50%;
+  height: 100px;
+  margin-left: 20%;
+  /* margin-right: 20%; */
+
+}
+.profile:hover{
+  border: solid 1px #6b6b6b;
+  box-shadow: 1px 1px 5px #6b6b6b;
+  color: #fff;
+}
+
+.inventory-body {
+  min-width: 100%;
+  background-image: url("../../assets/images/profile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+  }
+  .coffee {
+      display: flex;
+      flex-direction: row;
+      border-style: groove;
+      border: 1px solid #6b6b6b;
+      box-shadow: 2px 2px 2px 2px #666147;
+    }
+   
+    
+    .coffeelove {
+      width: 25%;
+      padding-top: 1%;
+    }
+    
+    .coffeelove1 {
+      width: 30%;
+      padding-right: 7px;
+      text-align: center;
+    }
+    
+    .logo {
+     width: 30%;
+     height: 100px;
+      padding-left: 5%;
+    }
+    .headding{
+      font-size: 300%;
+      margin-top: 10%;
+      text-align: center;
+       font-family:'Patua One',cursive;
+    }
+  /* .topnav{
+      overflow: hidden;
+      margin-left: 80%;
+      display: inline; */
+      /* padding-left: 1050px; */
+   /* }  */
+  /* .topnav a {
+    float: right;
+    color:honeydew;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 15px;
+   } 
+  .topnav a:hover {
+    color:chartreuse;
+  }  */
+  @media only screen and (min-width:320px) and (max-width:767px) {
+
+    .coffee {
+       width:100%;
+       display: flex;
+       flex-direction: row;
+       border-style: groove;
+       border: 1px solid #6b6b6b;
+       box-shadow: 2px 2px 2px 2px #666147;
+     }
+    
+     .coffeelove {
+       width: 50%;
+       /* padding-top: 1%; */
+     }
+   
+     .coffeelove1 {
+       width: 100%;
+       /* padding-left:100px; */
+       padding-right: 15px;
+       text-align: center;
+     }
+   
+     .logo {
+      width: 50%;
+      height: 100px;
+       padding-left: 5%;
+     }
+     .headding{
+      font-size: 27px;
+      margin-top: 10%;
+      text-align: center;
+       font-family:'Patua One',cursive;
+    }
+    /* body{
+      height:auto;
+    } */
+     .profile{
+      flex-direction: row;
+        justify-content:space-between;
+        border: 1px solid;
+        /* padding: 5px; */
+        text-align:center;
+        color: white;
+        border-width: 15px;
+        border-style: groove;
+        width: 70%;
+        /* height: 87%; */
+        text-align: center;
+        margin-left:10%;
+        margin-top: 9%;
+        font-size:15px;
+        font-style: italic;
+  }
+  .profile img{
+      width: 100%;
+      height: 100px;
+      /* margin-left: 20%; */
+      /* margin-right: 20%; */
+  
+  }
+  .profile:hover{
+      border: solid 1px #6b6b6b;
+      box-shadow: 1px 1px 5px #6b6b6b;
+      color: #fff;
+    }
+  
+  .inventory-body {
+      /* min-width: 100%; */
+      background-image: url("../../assets/images/profile.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      background-size: cover;
+      }
+      /* .topnav{
+        overflow: hidden; */
+        /* margin-left: 80%; */
+        /* display: inline; */
+        /* padding-left: 1050px; */
+     /* }  */
+    /* .topnav a {
+      float: right;
+      color:honeydew;
+      text-align: center; */
+      /* padding: 10px 10px; */
+      /* text-decoration: none;
+      font-size: 15px;
+     }  */
+    /* .topnav a:hover {
+      color:chartreuse;
+    }  */
+    }
